@@ -12,6 +12,20 @@ UI dropdown similar in behaviour to HTML's select tag with the following enhance
 
 How to use?
 -----------
-include the css and js files to your project and include the module in your main angular app:
+include the css:
+```
+<link rel="stylesheet" href="ng-drop.css"></link>
+```
 
+and js:
+
+```
+<script src="ng-drop.js"></script>
+```
+
+and include the module in your main angular app:
+
+
+```
 angular.module('yourApp', ['ngDrop']);
+```
