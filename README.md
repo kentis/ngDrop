@@ -1,7 +1,7 @@
 ngDrop
 ======
 
-Angularjs advanced dropdown
+Angularjs advanced dropdown. Pure DOM.
 
 
 Description
