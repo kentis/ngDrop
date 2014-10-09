@@ -52,7 +52,7 @@ In the html DOM, for example:
 
 In case no group is needed, use anonymous group:
 ```
-<dropdown dropdown-model="selected" style="width: 150px;" dropdown-placeholder="-- Select --">
+<dropdown dropdown-model="selected" dropdown-placeholder="-- Select --">
 	<dropdown-group>
 		<dropdown-item>Item 1</dropdown-item>
 		<dropdown-item>Item 2</dropdown-item>
