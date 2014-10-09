@@ -65,12 +65,6 @@ angular.module('ngDrop', [])
 			template: "<li class='group'><div class='group-name'>{{name}}</div><ul class='group-list'ng-transclude></ul></li>",
 			scope: {
 				name: "@"
-			},
-			controller: function($scope){
-				$scope.items = [];
-				this.addItem = function(item){
-					$scope.items.push(item);
-				};
 			}
 		};
 	})
@@ -106,10 +100,6 @@ angular.module('ngDrop', [])
             '   </div>'+
             '   <div style="clear:both;"></div>'+
             '</div>',
-                
-            link: function(scope, elem, attrs, ngModel){
-                
-            }
         };
     });
 
