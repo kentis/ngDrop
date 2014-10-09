@@ -1,0 +1,4 @@
+ngDrop
+======
+
+angularjs advanced dropdown
