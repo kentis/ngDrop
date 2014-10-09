@@ -61,3 +61,8 @@ In case no group is needed, use anonymous group:
 	</dropdown-group>
 </dropdown>
 ```
+
+Try it!
+-------
+
+A live demo [plunker](http://plnkr.co/edit/E0uuy7LoLtOFBOGCEJ4E?p=info).
