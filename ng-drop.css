@@ -42,9 +42,11 @@
 }
 
 .dropdown .dropdown-wrapper{
-	position: relative;
-	border:solid 1px #ccc;
+	position: absolute;
+	border: solid 1px #ccc; 
 	border-radius: 4px;
+	width: inherit;
+	background: #fff;
 }
 
 .dropdown .dropdown-selector{
