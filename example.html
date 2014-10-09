@@ -6,7 +6,7 @@
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="ng-drop.css">
 </head>
-	<body ng-app="drop">
+	<body ng-app="dropExample">
 
 		<dropdown dropdown-model="selected" style="width: 150px;" dropdown-placeholder="-- Select --">
 			<dropdown-group name="group 1">
@@ -35,9 +35,12 @@
 			</dropdown-group>
 		</dropdown>
 
-		<script src="angular.js" ></script>
+		<script src="angular.min.js" ></script>
 		<script src="ng-drop.js"></script>
-		<script src="app.js"></script>
+		
+		<script type="text/javascript">
+			angular.module('dropExample', ['ngDrop']);
+		</script>
 	
 	</body>
 </html>
