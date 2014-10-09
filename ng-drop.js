@@ -62,7 +62,7 @@ angular.module('ngDrop', [])
 		return {
 			restrict: "E",
 			transclude: true,
-			template: "<li class='group'><div class='group-name'>{{name}}</div><ul class='group-list'ng-transclude></ul></li>",
+			template: "<li class='group'><div class='group-name'>{{name}}</div><hr><ul class='group-list'ng-transclude></ul></li>",
 			scope: {
 				name: "@"
 			}
@@ -74,7 +74,7 @@ angular.module('ngDrop', [])
 			restrict: "E",
 			transclude: true,
 			require: "^dropdown",
-			template: "<li class='item' ng-transclude ng-click='setValue()'></li>",
+			template: "<div><li class='item' ng-transclude ng-click='setValue()'></li><hr><div>",
 			scope: {},
 			link: function(scope, elem, attrs, dropdown){
 				scope.setValue = function(){
