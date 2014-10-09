@@ -34,14 +34,16 @@ angular.module('ngDrop', [])
 					if (text !== undefined){
 						angular.forEach(element.find('dropdown-group'), function(value){
 							var is_group = true;
-							angular.forEach(angular.element(value).find('span'), function(item){
-								item.innerHTML = item.innerHTML.replace('<b>','').replace('</b>','');
-								var i = item.innerHTML.toLowerCase().indexOf(text.toLowerCase());
+							angular.forEach(angular.element(value).find('dropdown-item'), function(item){
+								itemSpan = angular.element(item).find('span')[0]; 
+								itemHtml = itemSpan.innerHTML;
+								itemHtml = itemHtml.replace('<b>','').replace('</b>','');
+								var i = itemHtml.toLowerCase().indexOf(text.toLowerCase());
 								if (text !== '' && i === -1){
 									item.hidden = true;
 								} else {
 									item.hidden = false;
-									item.innerHTML = item.innerHTML.substring(0,i) + "<b>" + item.innerHTML.substring(i,i+text.length)+ "</b>" + item.innerHTML.substring(i+text.length);
+									itemSpan.innerHTML = itemHtml.substring(0,i) + "<b>" + itemHtml.substring(i,i+text.length)+ "</b>" + itemHtml.substring(i+text.length);
 									is_group = false;
 								}
 							});
