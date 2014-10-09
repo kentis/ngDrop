@@ -26,7 +26,7 @@ and js:
 Finally, include the module in your main angular app:
 
 
-```html
+```js
 angular.module('yourApp', ['ngDrop']);
 ```
 
