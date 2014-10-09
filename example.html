@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="ng-drop.css">
+</head>
+	<body ng-app="drop">
+
+		<dropdown dropdown-model="selected" style="width: 150px;" dropdown-placeholder="-- Select --">
+			<dropdown-group name="group 1">
+				<dropdown-item>Item a1</dropdown-item>
+				<dropdown-item>Item a2</dropdown-item>
+			</dropdown-group>
+
+			<dropdown-group name="group 2">
+				<dropdown-item>Item b1</dropdown-item>
+				<dropdown-item>Item b2</dropdown-item>
+			</dropdown-group>
+
+			<dropdown-group name="group 3">
+				<dropdown-item>Item c1</dropdown-item>
+				<dropdown-item>Item c2</dropdown-item>
+			</dropdown-group>
+
+			<dropdown-group name="group 4">
+				<dropdown-item>Item d1</dropdown-item>
+				<dropdown-item>Item d2</dropdown-item>
+			</dropdown-group>
+
+			<dropdown-group name="group 5">
+				<dropdown-item>Item e1</dropdown-item>
+				<dropdown-item>Item e2</dropdown-item>
+			</dropdown-group>
+		</dropdown>
+
+		<script src="angular.js" ></script>
+		<script src="ng-drop.js"></script>
+		<script src="app.js"></script>
+	
+	</body>
+</html>
