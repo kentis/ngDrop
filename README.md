@@ -1,7 +1,7 @@
 ngDrop
 ======
 
-angularjs advanced dropdown
+Angularjs advanced dropdown
 
 
 Description
@@ -12,7 +12,7 @@ UI dropdown similar in behaviour to HTML's select tag with the following enhance
 
 How to use?
 -----------
-include the css:
+Include the css:
 ```
 <link rel="stylesheet" href="ng-drop.css"></link>
 ```
@@ -23,7 +23,7 @@ and js:
 <script src="ng-drop.js"></script>
 ```
 
-and include the module in your main angular app:
+Finally, include the module in your main angular app:
 
 
 ```
