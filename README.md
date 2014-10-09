@@ -13,25 +13,25 @@ UI dropdown similar in behaviour to HTML's select tag with the following enhance
 How to use?
 -----------
 Include the css:
-```
+```html
 <link rel="stylesheet" href="ng-drop.css"></link>
 ```
 
 and js:
 
-```
+```html
 <script src="ng-drop.js"></script>
 ```
 
 Finally, include the module in your main angular app:
 
 
-```
+```js
 angular.module('yourApp', ['ngDrop']);
 ```
 
 In the html DOM, for example:
-```
+```html
 <dropdown dropdown-model="selected" dropdown-placeholder="-- Select --">
 	<dropdown-group name="group 1">
 		<dropdown-item>Item a1</dropdown-item>
@@ -51,7 +51,7 @@ In the html DOM, for example:
 ```
 
 In case no group is needed, use anonymous group:
-```
+```html
 <dropdown dropdown-model="selected" dropdown-placeholder="-- Select --">
 	<dropdown-group>
 		<dropdown-item>Item 1</dropdown-item>
